@@ -77,5 +77,21 @@
         <br><br>
         <button type="submit">Actualizar</button>
     </form>
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 50, 100, 60);
+        ctx.beginPath();
+        ctx.arc(250, 100, 30, 0, 2 * Math.PI);
+        ctx.fillStyle = "red";
+        ctx.fill();
+
+        ctx.font = "20px Arial";
+        ctx.fillStyle = "black";
+        ctx.fillText("Hola Canvas!", 150, 180)
+    </script>
 </body>
 </html>
